@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title= upload-file
+    script(type='text/javascript').
+       alert("Size "+#{data}+" bytes")
+  body
+    h1 File Metadata Show:
+    p Please upload a file~
+    form(method='post',enctype='multipart/form-data',action='/')
+      input(type='file' name='myfile')
+      input(type='submit')
+      
+ 
+      
